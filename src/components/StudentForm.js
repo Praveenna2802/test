@@ -4,7 +4,7 @@ function StudentForm(props)
 {
     const [name,setName] = useState(props.nameValue);
     const [email,setEmail] = useState(props.emailValue);
-    const [rollNo,setRollNo] = useState(props.rollNoValue);
+    const [rollno,setRollNo] = useState(props.rollNoValue);
 
     useEffect(()=>{
         setName(props.nameValue);
@@ -12,7 +12,7 @@ function StudentForm(props)
         setRollNo(props.rollNoValue);
     },[props.nameValue,props.emailValue,props.rollNoValue]);
    
-    const arr = [name,email,rollNo];  //[Raj,raj@gmail.com,1]
+    const arr = [name,email,rollno];  //[Raj,raj@gmail.com,1]
    
     const handleClick = () =>{
         props.getState(arr);
