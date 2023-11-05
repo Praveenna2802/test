@@ -6,7 +6,7 @@ function StudentList()
 {
     const [arr,setArr] = useState([]);
     useEffect(()=>{
-        Axios.get("https://crud-deployment-backend-2.onrender.com/studentRoute/")
+        Axios.get("https://newdep1.onrender.com/studentRoute/")
         .then((res)=>{
             if(res.status === 200)
                 setArr(res.data);
