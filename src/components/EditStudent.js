@@ -9,7 +9,7 @@ function EditStudent() {
     const [newData, setNewData] = useState([]);
 
     useEffect(() => {
-        Axios.get("https://crud-deployment-backend-2.onrender.com/studentRoute/update-student/" + id)
+        Axios.get("https://newdep1.onrender.com/studentRoute/update-student/" + id)
             .then((res) => {
                 if (res.status === 200) {
                     const { name, email, rollNo } = res.data;
